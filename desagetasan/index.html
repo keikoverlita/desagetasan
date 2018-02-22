@@ -14,8 +14,10 @@
 <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
-<!-- Bootstrap -->
+<!-- Bootstrap
 <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css"  href="css/full-slider.css"> -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
 
 <!-- Stylesheet
@@ -75,6 +77,93 @@
     </div>
   </div>
 </div>
+<div class="modal fade" id="ModalTenun" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <strong>Produksi Kain Tenun</strong>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        Untuk melihat 
+        <a href="#" data-toggle="modal" data-target="#ModalVideoTenun" data-dismiss="modal"><i class="fa fa-play-circle"></i></a>
+        <br>
+        Untuk melihat
+        <a href="#" data-toggle="modal" data-target="#ModalFotoTenun" data-dismiss="modal"><i class="fa fa-photo"></i></a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="ModalVideoTenun" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <strong>Produksi Kain Tenun</strong>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center center">
+        <p><strong>Video Proses Pembuatan Kain Tenun di Desa Getasan</strong></p>
+          <iframe src="https://drive.google.com/file/d/1x96b0p5UXVaZSLAh2YTLiDY4d2v-6orh/preview" width="480" height="320"></iframe><iframe src="https://drive.google.com/file/d/1LDb9xpMo4Zq5lp5ep14zxTkskygzn56R/preview" width="480" height="320"></iframe><iframe src="https://drive.google.com/file/d/19Go-5h4xI5WA5kwq7kPiSVwAOzyHmuT9/preview" width="480" height="320"></iframe>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="ModalFotoTenun" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <strong>Produksi Kain Tenun</strong>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center center">
+        <p><strong>Foto Proses Pembuatan Kain Tenun di Desa Getasan</strong></p>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="https://drive.google.com/uc?id=1c9jSBcJK4kbeNtRp9fwrl6-WZVMMBDoD" alt="Los Angeles" style="width: 100%; height: 400px">
+                </div>
+                <div class="item">
+                  <img src="img/header-bg2.jpg" alt="Chicago" style="width: 100%; height: 400px">
+                </div>
+                <div class="item">
+                  <img src="img/header-bg2.jpg" alt="New york" style="width: 100%; height: 400px">
+                </div>
+              </div>
+
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Header -->
 <header class="text-center" name="home">
@@ -95,17 +184,17 @@
     </div>
     <div class="space"></div>
     <div class="row">
-      <div class="col-md-4 col-sm-6 service"> <a href="#" data-toggle="modal" data-target="#ModalWisata" data-dismiss="modal"><i class="fa fa-leaf  "></i></a>
+      <div class="col-md-4 col-sm-6 service"><a href="#" data-toggle="modal" data-target="#ModalWisata" data-dismiss="modal"><i class="fa fa-leaf  "></i></a>
         <h4>Tempat Wisata</h4>
         <p>Isiin dah kata - kata disini</p>
       </div>
-      <div class="col-md-4 col-sm-6 service"> <i class="fa fa-plus-square"></i>
+      <div class="col-md-4 col-sm-6 service"><i class="fa fa-plus-square"></i>
         <h4>Layanan Kesehatan</h4>
         <p>Isiin dah kata - kata disini</p>
       </div>
-      <div class="col-md-4 col-sm-6 service"> <i class="fa fa-rss"></i>
+      <div class="col-md-4 col-sm-6 service"><a href="#" data-toggle="modal" data-target="#ModalTenun" data-dismiss="modal"><i class="fa fa-rss"></i></a>
         <h4>Produksi Kain Tenun</h4>
-        <p>Isiin dah kata - kata disini</p>
+        <p>Isiin dah kata - kata disini asdkjas hdkasjhd kasj hdaksjhd aksj dhaskj dhsak jdshakdj ahskd jhas dkjsahd kjas hdsajkdh askjdh askjdkajd haksj hdkjha sjk hdaskjd haskjd h</p>
       </div>
     </div>
   </div>
@@ -344,33 +433,7 @@
       <div class="col-md-4"> <i class="fa fa-phone"></i>
         <p> +1 123 456 1234</p>
       </div>
-      <hr>
       <div class="clearfix"></div>
-    </div>
-    <div class="col-md-8 col-md-offset-2">
-      <h3>Leave us a message</h3>
-      <form name="sentMessage" id="contactForm" novalidate>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-          <p class="help-block text-danger"></p>
-        </div>
-        <div id="success"></div>
-        <button type="submit" class="btn btn-default">Send Message</button>
-      </form>
     </div>
   </div>
 </div>
@@ -380,21 +443,18 @@
     <div class="social">
       <ul>
         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
       </ul>
     </div>
   </div>
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed
+<script type="text/javascript" src="js/bootstrap.js"></script> -->
 <script type="text/javascript" src="js/SmoothScroll.js"></script> 
 <script type="text/javascript" src="js/jquery.counterup.js"></script> 
 <script type="text/javascript" src="js/waypoints.js"></script> 
